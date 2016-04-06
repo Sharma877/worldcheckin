@@ -10,10 +10,6 @@ $total = "";
 $tax = "";
 $tax_price = "";
 $initial_price = "";
-
-
-
-
 function pr($d__){echo "<pre>"; print_r($d__);echo "</pre>";}
 
 if (isset($invoice_id)) {
