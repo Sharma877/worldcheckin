@@ -1,0 +1,178 @@
+.gd-invoices {
+}
+#gd_payment_invoices, #gd_pmt_invoice_detail {
+    table-layout: fixed;
+	margin-bottom: 1.5em
+}
+table.gdp-invoices-table {
+	text-align: left;
+	width: 100%;
+	margin: 0 0 21px;
+	border-collapse: collapse;
+}
+table.gdp-invoices-table th,
+table.gdp-invoices-table td {
+	text-align: left;
+	border: 1px solid #eee;
+	color: #666;
+	padding: 0.3em 1em;,
+	max-width: 100%;
+}
+table.gdp-invoices-table th {
+	background: #fafafa;
+	font-weight: bold;
+}
+table.gdp-invoices-table th.gd-inv-no,
+table.gdp-invoices-table td.gd-inv-no {
+	text-align: center
+}
+table.gdp-invoices-table small.gd-inv-meta {
+    color: #999;
+    display: block;
+    font-size: inherit;
+    margin: 2px 0;
+	line-height: normal
+}
+table.gdp-invoices-table .gd-inv-row.gd-inv-act td {
+}
+table.gdp-invoices-table .gd-inv-row.gd-inv-act .gd-inv-item {
+	border-bottom: solid 1px transparent;
+}
+
+table.gdp-invoices-table .gd-inv-info.gd-inv-act td {
+	border-bottom: solid 1px #ccc;
+}
+table.gdp-invoices-table .gd-inv-info .gd-inv-val, table.gdp-invoices-table .gd-inv-invoice .gd-inv-lbl {
+	font-weight: 600
+}
+table.gdp-invoices-table .gd-inv-info .gd-inv-val a {
+	text-decoration: none
+}
+small.gd-inv-meta a {
+	text-decoration: none;
+	font-size:95%;
+}
+.gd-inv-confirmed .gd-inv-status {
+	color: green;
+}
+.gd-inv-info .gd-inv-detail-box {
+	float: left;
+	width: 50%
+}
+.gd-inv-info .gd-inv-detail-lft {
+}
+.gd-inv-info .gd-inv-detail-rgt {
+}
+
+.gd-payment-invoices {
+	position: relative
+}
+p.gdp-invoices-loading {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 49%;
+	left: 49%
+}
+
+.gd-inv-detail.gd-inv-invoice .gd-inv-lbl {
+	display: block
+}
+.gd-inv-detail.gd-inv-invoice .gd-inv-text {
+	line-height: normal;
+	display: inline-block
+}
+/* invoice detail */
+#gd_pmt_invoice_detail table {
+	width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e1e1e1;
+    font-size: 0.9rem;
+    line-height: normal;
+	margin-bottom: 0;
+}
+.gd-pmt-invoice-detail {
+	font-size: 13px;
+}
+.gd-pmt-invoice-detail h4 {
+	font-size: 1.025rem;
+	font-weight: 600;
+}
+.gd-pmt-invoice-detail > h4 {
+	margin: 1.5rem 0 1rem 0
+}
+.gd-pmt-invoice-detail .gd-order-details {
+    list-style: outside none none;
+    margin: 0 0 1.5em;
+}
+.gd-pmt-invoice-detail .gd-order-details::before, .gd-pmt-invoice-detail .gd-order-details::after {
+    content: " ";
+    display: table;
+}
+.gd-pmt-invoice-detail .gd-order-details::after {
+    clear: both;
+}
+.gd-pmt-invoice-detail .gd-order-details li {
+    border-right: 1px dashed #dfdbdf;
+    float: left;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin: auto;
+    padding: 0;
+    text-transform: uppercase;
+	text-align: left;
+	text-indent: 1rem
+}
+.gd-pmt-invoice-detail .gd-order-details li.gd-pmt-order, .gd-pmt-invoice-detail .gd-order-details li.gd-pmt-total, .gd-pmt-invoice-detail .gd-order-details li.gd-pmt-status {
+	width: 16%;
+}
+.gd-pmt-invoice-detail .gd-order-details li.gd-pmt-date {
+	width: 23%;
+}
+.gd-pmt-invoice-detail .gd-order-details li.gd-pmt-method {
+	width: 28%;
+}
+.gd-pmt-invoice-detail .gd-order-details li strong {
+    display: block;
+    font-size: .965rem;
+    line-height: 1.5rem;
+    text-transform: none;
+	font-weight: 600;
+}
+.gd-pmt-invoice-confirmed .gd-pmt-status strong {
+	color: green
+}
+.gd-pmt-invoice-detail .gd-order-details li:last-of-type {
+    border: medium none;
+}
+.gd-pmt-trans-detail {
+	margin-bottom: 
+}
+.gd-pmt-trans-detail .gd-trans-text {
+	display: inline-block;
+    line-height: normal;
+	font-size: .925rem
+}
+.gd-pmt-listing-detail > h4, .gd-pmt-trans-detail > h4 {
+	margin-bottom: .35rem
+}
+.gd-pmt-custom-detail .gd-pmt-listing-detail, .gd-pmt-custom-detail .gd-pmt-trans-detail {
+	width: 50%;
+	float: left
+}
+.gd-pmt-custom-detail .gd-inv-lbl {
+	display: inline-block;
+	min-width: 90px
+}
+.gd-pmt-custom-detail .gd-inv-val {
+	font-weight:600
+}
+.gd-pmt-custom-detail .gd-inv-val a {
+	text-decoration: none;
+}
+.gd-pmt-invoice-detail .gd-checkout-actions {
+	margin: 1.75rem 0 .5rem 0;
+}
+.gd-pmt-invoice-detail .gd-checkout-actions .gd-pmt-btnall {
+	float: left
+}

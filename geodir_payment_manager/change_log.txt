@@ -1,0 +1,123 @@
+v1.3.5
+Option added to limit coupon usage and coupon usage count - ADDED
+Option added to enable/disable coupon use per price package - CHANGED
+Payment status replaced with Incomplete if checkout not completed - CHANGED
+
+v1.3.4
+Expire check can restore trashed posts if they still have time left to run - FIXED
+
+v1.3.3
+Login link updated to use geodir_login_url() function - FIXED
+Subscription payments not extending listing time - FIXED
+case conversion functions replaced with custom function to support unicode languages - CHANGED
+
+v1.3.2
+Changes made to be abel to use new GD info page for payment return information - CHANGED
+Invoice not processed correctly when used 100% discount coupon - FIXED
+Upgrading listing not adding previous days left to expire date - FIXED
+Tinymce editor changes broke the description limit on the add listing page - FIXED
+Option added to show/hide upgrade link on listings & listing detail page - ADDED
+Language file not scanning for esc_attr_e so missing some translations - FIXED
+
+v1.3.1
+Invoice page displays ###.INVOICE_PAGE_ID at the bottom - FIXED
+
+v1.3.0
+GD auto update script improved efficiency and security(https) - CHANGED
+Payment system upgraded with some new features - ADDED
+Changed textdomain from defined constant to a string - CHANGED
+
+v1.2.5
+Price description are translatable using GD Tools -> Custom fields translation - FIXED
+Category limit no longer counting child categories - FIXED
+Changes made for WPML compatibility - CHANGED
+dbDelta function not running on version clear - FIXED
+
+V1.2.4
+If ID not set the package limits can default to the post_type default package - FIXED
+Expire date doesn't use WP settings default date format - FIXED
+Some PHP warnings/notices resolved - FIXED
+
+V1.2.3
+Limit tags description changed to make it more clear if not used the default 40 characters will be used - CHANGED
+geodir_update_post_meta used instead of geodir_save_post_meta - FIXED
+Option added to hide the related listing tab on detail page - ADDED
+dbDelta function used for tables creation - CHANGED
+function geodir_update_invoice_status() used to update invoice statuses - CHANGED
+publish the property changed to publish the listing for more coherent with the description - CHANGED
+Added font awesome icons to upgrade and renew links - ADDED
+If only one payment gateway active the gateway is not checked - FIXED
+
+V1.2.2
+Link to add listing page fixed - FIXED
+Note added to explain recurring for field can be left blank for no limit - ADDED
+
+V1.2.1
+Add listing shortcode bug for prices not showing - FIXED
+
+V1.2.0
+Some changes for AffiliateWP integration - CHANGED
+Renew listing not changing listing expire date - FIXED
+
+V1.1.9
+Some changes for AffiliateWP integration - CHANGED
+
+V1.1.8
+Hook to update DB changes change to plugins_loaded - CHANGED
+
+V1.1.7
+Recurring payment times note added to show minimum and maximum allowed values - ADDED
+Upgrading a listing sometimes does not set it to draft first - FIXED
+
+V1.1.6
+Authorize.net select card type option removed as no longer required - CHANGED
+
+V1.1.5
+Error message text updated for "Category limit" in price package - CHANGED
+default price packaged have cat_limit set to 0 which causes problems - FIXED
+added fix for change package for add-listing shortcode - FIXED
+
+V1.1.4
+Recurring times warning added if less than 2 - ADDED
+Recurring units has range 1 missing - FIXED
+
+V1.1.3
+recurring payment number of times range change from 1-x to 2-x as 1 should not be a recurring payment - CHANGED
+if free trial is offered with sub then the listing is not published automatically - FIXED
+
+V1.1.2
+Admins can now set is_featured regardless of price package - CHANGED
+
+V1.1.1
+Video not showing if description limit is set - FIXED
+Invoice function can sometime fail to return the correct ID causing the paypal payment page to be invalid - FIXED
+
+V1.0.9
+When this user adds a new listing and enters alive days & expire date "Never", after saving the expire date goes to 1970 - FIXED
+Template files can't be replaced in child theme - FIXED
+Expirey date displayed in listings in my dashboard and detail page (for owner only) - ADDED
+Option added to show/hide expirey date to listings in my dashboard and detail page - ADDED
+New hook "geodir_payment_filter_payable_amount_with_coupon" added to function "geodir_get_payable_amount_with_coupon" - ADDED
+Feature added to show link text "Upgrade Listing" to "Renew Listing" if listing is going to expire in next days - ADDED
+If renewing to same package that the days remaining on your package will added to your next package - ADDED
+WordPres multisite compatability - ADDED
+User can now delete invoiced - ADDED
+Ivoices are deleted when the post is is for is deleted - ADDED
+Added option to coupon to allow to discount subscription only first payment - ADDED
+Added error checking to authorize.net inputs - ADDED
+Added error message and redirect for authorize.net payment failure - ADDED
+
+1.0.8
+IPN can send 404 not found depending on homepage settings - FIXED
+Removed PHP warning message - FIXED
+Custom css classes added for each the listing row to identify paid and free listing - ADDED
+There seems to be a little bug when as admin you only add �alive days�. If you do that, the systems seems to think today is 1 January 1970 - FIXED
+Days, Weeks, Months and Years added in options for paypal free trial limit units - ADDED
+Filter geodir_package_info updated for better support - ADDED
+
+
+
+Notification of listing submission for bank transfer doesn't seem to be translatable. - FIXED
+Option of character limitation added for post tags and description for custom price packages. - ADDED
+BCC opion added for admin to receive notification of expire listings - ADDED
+Blank index.php added to each directory - ADDED
